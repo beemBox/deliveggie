@@ -15,7 +15,7 @@
     
   .header__logo {
     margin-left: 100px;
-    width: 210px;
+    width: 200px;
     text-decoration: none;
     text-shadow: $text-shadow;
     
@@ -24,6 +24,9 @@
       
       &:hover {
         color: nth($site-colors, 4);
+        .logo__img {
+          color: #76ca4b;
+        }
       }
     }
 

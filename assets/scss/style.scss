@@ -75,12 +75,14 @@ hr {
   font-family: 'Blue Lotus';
   color: nth($font-colors, 1);
   font-size: ($font-size + 25);
+  text-shadow: 1px 1px 2px #000;
 }
 
 .logo__img {
   display: inline-block;
-  width: 40px!important;
+  width: 37px!important;
   vertical-align: sub;
+  filter: drop-shadow(1px 1px 2px #000)!important;
 }
 
 .card-toolbar {
