@@ -118,8 +118,9 @@
     <div class='dishes__container'>
 
       <div class='dishes-item dish-1'>
+        <!-- El input lo tuve que poner fuera de card-toolbar para poder acceder a los cambios de estilo según si está checkeado o no en los elementos siblings -->
+        <input type="checkbox" class="view-pics-cb" id="dish-1--imgs">
         <div class="card-toolbar">
-          <input type="checkbox" class="view-pics-cb" id="dish-1--imgs">
           <label for="dish-1--imgs" class="view-pics"><i class="fas fa-images"></i></label>
         </div>
         <div id='fav-1' class="carousel slide">
