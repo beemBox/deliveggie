@@ -1,0 +1,52 @@
+.pedidos {
+	width: 90%;
+	@include flex-column;
+	@include bg-gradient;
+	padding: 50px;
+	border-radius: 10px;
+  
+  .pedidos__container {
+    display: flex;
+    flex-direction: column;
+    
+    .pedidos__container-ultimos {
+      display: grid;
+      grid-template-areas: "a a a a b b" "a a a a b b" "a a a a c c" "d d d e e f";
+      grid-row-gap: 10px;
+      grid-column-gap: 10px;
+
+      .pedidos-item {
+        background-color: nth($site-colors, 6);
+        border: 1px solid nth($site-colors, 4);
+        padding: 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+
+        /* Posiciones de los ítems */
+        &.item-1 {
+          grid-area: a; 
+        }
+
+        &.item-2 {
+          grid-area: b;
+        }
+
+        &.item-3 {
+          grid-area: c;
+        }
+
+        &.item-4 {
+          grid-area: d;
+        }
+
+        &.item-5 {
+          grid-area: e;
+        }
+
+        &.item-6 {
+          grid-area: f;
+        }
+      }
+    }
+  }
+}

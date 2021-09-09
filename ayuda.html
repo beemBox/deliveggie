@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deliveggie - Delivery de comida veggie directo a la puerta de tu casa" />
+  <meta property="og:image" content="" />
+  <meta property="og:description"
+    content="¿Qué comemos hoy? Deliveggie: Comida gourmet saludable directo a la puerta de tu casa." />
+  <meta property="og:author" content="Mariano Sebastián Silva" />
+
+  <title>Ayuda</title>
+  <meta name="description"
+    content="Deliveggie se encarga de acercar a las personas las mejores ofertas en restaurantes gourmet dedicados principalmente a la gastronomía vegetariana y/ó vegana y acercártelo a la puerta de tu casa.">
+  <meta name="keywords"
+    content="comida, vegana, vegetariana, lacto-vegetariana, ovo-lacto-vegetariana, pisci-vegana, pisci-vegetariana, frugivora">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href='./index.html'>
+      <span class="logo">Deliveggie</span>
+    </a>
+    <a class="header__logo responsive" href='./index.html'>
+      <span class="logo">D.V!.</span>
+    </a>
+    <div class='header__search'>
+      <i class="fas fa-search responsive-search"></i>
+      <input type='text' class='search__input' placeholder="Buscar restaurantes...">
+    </div>
+    <label for="hamburger" class="mostrarmenu">&#9776</label>
+    <input type="checkbox" id="hamburger" />
+    <nav class="header__menu" aria-label="primary navigation">
+      <ul>
+        <li><a href='./ofertas.html'>Ofertas</a></li>
+        <li><a href='./mispedidos.html'>Mis Pedidos</a></li>
+        <li>
+          <div class="header__menu-profile">
+            <!-- Esto también está planeado ser un link desplegable -->
+            <img alt='Perfil de Usuario' />
+            <p>Mi Perfil</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header__menu hamburger" aria-label="primary navigation">
+      <ul id="mostrarmenu">
+        <li><a href='./ofertas.html'>Ofertas</a></li>
+        <li><a href='./mispedidos.html'>Mis Pedidos</a></li>
+        <li>
+          <div class="header__menu-profile">
+            <!-- Esto también está planeado ser un link desplegable -->
+            <img alt='Perfil de Usuario' />
+            <p>Mi Perfil</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class='about-us'>
+    <h3 class='about-us__title section__title'>¿Cómo funciona Random?</h3>
+    <div class='about-us__container'>
+      <div class='about-us__detail'>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi eos, laudantium cumque repellendus doloribus
+          maxime aspernatur incidunt et! Sapiente asperiores dolores vitae delectus cumque non repudiandae corporis
+          aspernatur ullam earum.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, numquam tempore nam accusantium excepturi
+          dignissimos, maxime non, pariatur expedita velit consequatur modi. Provident perferendis veniam earum illum
+          eaque rerum odit.
+        </p>
+      </div>
+      <div class='about-us__video'>
+        <video src='#'></video>
+      </div>
+    </div>
+  </section>
+
+  <footer class='footer'>
+    <div class="footer-container">
+      <div class='footer-sitemap'>
+        <h5 class='footer-sitemap__title'>Mapa del Sitio</h5>
+        <nav class='footer-sitemap__nav' aria-label='sitemap navigation'>
+          <ul class=''>
+
+            <li><a href='./nosotros.html'>Nosotros</a></li>
+            <li><a href='./ayuda.html'>Ayuda</a></li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- A pleno los íconos de font-awesome -->
+      <div class='footer-social'>
+        <h5 class='footer-social__title'>Seguinos en nuestras redes</h5>
+        <div class='footer-social-container'>
+          <ul class='footer-social-list'>
+            <li class='footer-social-item'>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-twitter-square fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-youtube fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-instagram fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-facebook-square fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class='footer-legal'>
+      <p class='footer-legal__desc'>© 2020-2021 Random S. A. y compañía. </p>
+      <nav class='footer-legal__nav' aria-label='legal navigation'>
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+      </nav>
+    </div>
+
+  </footer>
+</body>
+
+</html>

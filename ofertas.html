@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Deliveggie - Delivery de comida veggie directo a la puerta de tu casa" />
+  <meta property="og:image" content="" />
+  <meta property="og:description"
+    content="¿Qué comemos hoy? Deliveggie: Comida gourmet saludable directo a la puerta de tu casa." />
+  <meta property="og:author" content="Mariano Sebastián Silva" />
+
+  <title>Ofertas del Día</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" href='./index.html'>
+      <span class="logo">Deliveggie</span>
+    </a>
+    <a class="header__logo responsive" href='./index.html'>
+      <span class="logo">D.V!.</span>
+    </a>
+    <div class='header__search'>
+      <i class="fas fa-search responsive-search"></i>
+      <input type='text' class='search__input' placeholder="Buscar restaurantes...">
+    </div>
+    <label for="hamburger" class="mostrarmenu">&#9776</label>
+    <input type="checkbox" id="hamburger" />
+    <nav class="header__menu" aria-label="primary navigation">
+      <ul>
+        <li><a href='./ofertas.html'>Ofertas</a></li>
+        <li><a href='./mispedidos.html'>Mis Pedidos</a></li>
+        <li>
+          <div class="header__menu-profile">
+            <!-- Esto también está planeado ser un link desplegable -->
+            <img alt='Perfil de Usuario' />
+            <p>Mi Perfil</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header__menu hamburger" aria-label="primary navigation">
+      <ul id="mostrarmenu">
+        <li><a href='./ofertas.html'>Ofertas</a></li>
+        <li><a href='./mispedidos.html'>Mis Pedidos</a></li>
+        <li>
+          <div class="header__menu-profile">
+            <!-- Esto también está planeado ser un link desplegable -->
+            <img alt='Perfil de Usuario' />
+            <p>Mi Perfil</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Ofertas nuevos negocios -->
+  <section class='dishes'>
+    <h3 class='dishes__title section__title'>Ofertas de Nuevos Restaurantes</h3>
+    <div class='dishes__container'>
+
+      <div class='dishes-item'>
+        <div id='fav-1' class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/dishes/burger.jpg" alt="Hamburguesa de Portobellos"
+                class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/burger-2.jpg" alt="Hamburguesa de Portobellos"
+                class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/burger-3.jpg" alt="Hamburguesa de Portobellos"
+                class="d-block w-100 dishes-item__img">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#fav-1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previa</span>
+        </a>
+        <a class="carousel-control-next" href="#fav-1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Hamburguesa Vitamínica</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <div id='fav-2' class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/dishes/roll-1.jpg" alt="Roll Veggie con Falafel"
+                class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/roll-2.jpg" alt="Roll Veggie con Falafel"
+                class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/roll-3.jfif" alt="Roll Veggie con Falafel"
+                class="d-block w-100 dishes-item__img">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#fav-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previa</span>
+        </a>
+        <a class="carousel-control-next" href="#fav-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Roll con Falafel</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <div id='fav-3' class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/dishes/salad-1.jpg" alt="Ensalada Portéica" class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/salad-2.jpg" alt="Ensalada Protéica" class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/salad-3.jfif" alt="Ensalada Protéica"
+                class="d-block w-100 dishes-item__img">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#fav-3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previa</span>
+        </a>
+        <a class="carousel-control-next" href="#fav-3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Ensalada Detox</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <div id='fav-4' class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/dishes/falafel-1.jpg" alt="Falafel al Pan" class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/falafel-2.jpg" alt="Falafel al Pan" class="d-block w-100 dishes-item__img">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/dishes/falafel-3.jpg" alt="Falafel al Pan" class="d-block w-100 dishes-item__img">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#fav-4" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previa</span>
+        </a>
+        <a class="carousel-control-next" href="#fav-4" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Falafel Clásico</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Ofertas más aprovechadas -->
+  <section class='dishes'>
+    <h3 class='dishes__title section__title'>Las Ofertas Más Aprovechadas</h3>
+    <div class='dishes__container'>
+
+      <div class='dishes-item'>
+        <img class='dishes-item__img' src='#' alt='Ensalada Multivitamínica'>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Ensalada Multivitamínica</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <img class='dishes-item__img' src='#' alt='Falafel Protéico'>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Falafel Protéico</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <img class='dishes-item__img' src='#' alt='Hamburguesa de Portobellos'>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Hamburguesa de Portobellos</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+      <div class='dishes-item'>
+        <img class='dishes-item__img' src='#' alt='img plato 4'>
+        <div class='dishes-item__details'>
+          <p class='dishes__details--title'>Ensalada Paleo Vegana</p>
+          <!-- Acá uso las formas de estrellas de font-awesome que después las cambiaría por CSS puro -->
+          <div class="dishes-item__details--rating">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <button class="button">Pedir</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class='footer'>
+    <div class="footer-container">
+      <div class='footer-sitemap'>
+        <h5 class='footer-sitemap__title'>Mapa del Sitio</h5>
+        <nav class='footer-sitemap__nav' aria-label='sitemap navigation'>
+          <ul class=''>
+
+            <li><a href='./nosotros.html'>Nosotros</a></li>
+            <li><a href='./ayuda.html'>Ayuda</a></li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- A pleno los íconos de font-awesome -->
+      <div class='footer-social'>
+        <h5 class='footer-social__title'>Seguinos en nuestras redes</h5>
+        <div class='footer-social-container'>
+          <ul class='footer-social-list'>
+            <li class='footer-social-item'>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-twitter-square fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-youtube fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-instagram fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href='/' class='footer-social-item__link'>
+                <i class="fab fa-facebook-square fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class='footer-legal'>
+      <p class='footer-legal__desc'>© 2020-2021 Random S. A. y compañía. </p>
+      <nav class='footer-legal__nav' aria-label='legal navigation'>
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+      </nav>
+    </div>
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-evenly {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin flex-column-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@mixin bg-gradient {
+  background: rgb(121,160,56);
+  background: linear-gradient(
+    0deg,
+    nth($site-colors, 1) 70%,
+    nth($site-colors, 4) 100%);
+}
+
+@mixin active-dishes-item {
+  background: linear-gradient(
+    to top,
+    nth($site-colors, 6) 5%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 105%;
+  height: 100%;
+  z-index: 3;
+  transition: all .5s ease-in-out;
+
+  .dishes__details--title {
+    color: nth($font-colors, 1);
+    transition: color .7s ease-in-out;
+  }
+
+  .button {
+    opacity: 1;
+    height: 40px + 10px;
+  }
+}
+
+@mixin card-toolbar {
+  
+}

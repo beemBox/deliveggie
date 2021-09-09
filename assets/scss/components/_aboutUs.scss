@@ -1,0 +1,46 @@
+.about-us {
+	* {
+		position: relative;
+		z-index: 2;
+	}
+
+	position: relative;
+	width: 100%;
+	margin: 0;
+	height: 100vh;
+	color: nth($site-colors, 6);
+	background-image: url('../img/section01.jpg');
+	background-size: cover;
+	@include flex-column-center;
+	background-attachment: fixed;
+  
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		background-color: rgba(0,0,0,0.6);
+	}
+
+	.about-us__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		.about-us__detail {
+			width: 40%;
+			padding-left: 8%;
+			text-align: right;
+			width: 400px;
+			font-size: $font-size - 8;
+		}
+
+		.about-us__video {
+			width: 40%;
+			padding-left: 5%;
+		}
+	}
+}
+

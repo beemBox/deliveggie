@@ -1,0 +1,136 @@
+
+section.carousel {
+	padding: 20px 0;
+	width: 90vw;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	text-shadow: $text-shadow;
+
+	.carousel__container {
+		font-size: 0;
+		padding-bottom: 10px;
+		width: 285vw;
+		font-size: $font-size - $font-size; /* podía poner 0 */
+		transition: 1s ease;
+		height: 220px;
+		display: inline-flex;
+		animation: carousel 20s ease-in-out infinite;
+
+		h3 {
+			text-align: center;
+			font-size: 50px;
+			margin: 0;
+			padding: 0;
+			color: nth($font-colors, 2);
+		}
+		
+		.carousel-item {
+			opacity: 0.9;
+			border-radius: 10px;
+			overflow: hidden;
+			position: relative;
+			display: inline-block;
+			width: 90vw;
+			font-size: $font-size - 10;
+			@extend %item-base;
+			margin-right: 5vw;
+			display: flex;
+			justify-content: space-between;
+
+			button {
+				background-color: nth($font-colors, 3);
+          border: none;
+          border-radius: 10px;
+          color: #fff;
+          cursor: pointer;
+          font-size: $font-size - 14;
+          font-weight: bold;
+          float: right;
+          margin: 10px 0px;
+          padding: 14px;
+          outline: none;
+        
+          
+          &:hover {
+            background-color: nth($site-colors, 5);
+            color: nth($font-colors, 1);
+            transition: all .2s ease-in-out;
+          }
+			}
+
+			img {
+				height: 100%;
+			}
+			
+			&:last-child {
+				margin: 0;
+			}
+			
+			p {
+				padding: 40px;
+			}
+		}
+		
+		&:hover {
+			.carousel-item {
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+
+				
+		.banner1 {
+			background-image:
+				linear-gradient( rgba(0, 0, 0, 0.7), 
+				rgba(0, 0, 0, 0.2) ),
+				url('../img/banner01.jpg');
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		.banner2 {
+			background-image:
+				linear-gradient( rgba(0, 0, 0, 0.7),
+				rgba(0, 0, 0, 0.2) ),
+				url('../img/banner02.jpg');
+			background-size: cover;
+		}
+
+		.banner3 {
+			background-image:
+				linear-gradient( rgba(0, 0, 0, 0.7),
+				rgba(0, 0, 0, 0.2) ),
+				url('../img/banner03.jpg');
+			background-size: cover;
+		}
+	}
+}
+
+// @keyframes carousel {
+// 	0% {
+// 		transform: translateX(0%);
+// 	}
+// 	25% {
+// 		transform: translateX(0%);
+// 	}
+// 	33.33% {
+// 		transform: translateX(-33.4%);
+// 	}
+// 	50% {
+// 		transform: translateX(-33.4%);
+// 	}
+// 	66% {
+// 		transform: translateX(-66.7%);
+// 	}
+// 	80% {
+// 		transform: translateX(-66.7%);
+// 	}
+// 	90% {
+// 		transform: translateX(0);
+// 	}
+// 	100% {
+// 		transform: translateX(0);
+// 	}
+// }

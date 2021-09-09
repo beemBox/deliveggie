@@ -1,0 +1,16 @@
+/* Colores principales */
+/* No se cuentan como un array, acá hay que volver a ser más perhumano. */
+$site-colors:
+#79a038,
+rgb(127 20 208),
+rgb(156 26 255),
+#705496,
+#dc8e32,
+// #dc8e32,
+#eee;
+
+$font-colors:
+#fff,
+nth($site-colors, 5),
+#79a038,
+#705496;

@@ -1,0 +1,105 @@
+
+@import './base/variables';
+@import './base/listas';
+@import './base/fonts';
+@import './base/maps';
+@import './base/extends';
+@import './base/mixins';
+
+
+/* Components */
+@import './components/header';
+@import './components/carousel';
+@import './components/dishes';
+@import './components/aboutUs';
+@import './components/pedidos';
+@import './components/footer';
+@import './components/mediaQueries';
+
+
+/* Normalizamos */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto'; 
+  font-weight: 100; 
+}
+
+html {
+  font-size: $font-size - 13;
+}
+
+body {
+  background-color: nth($site-colors, 6);
+  @include flex-column;
+}
+
+main {
+  margin-bottom: 280px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section {
+  top: 30px;
+  margin: 20px 70px;
+  flex-grow: 1;
+}
+
+hr {
+  width: 90%;
+  border: none;
+  margin: 30px 0;
+  background-color: nth($site-colors, 4);
+  height: 1px;
+}
+
+
+/* Útiles generales */
+.responsive {
+  display: none;
+}
+
+
+.section__title {
+  padding: 30px;
+  font-weight: 900px;
+  color: nth($font-colors, 1);
+  font-size: $font-size + 20;
+  font-family: 'Blue Lotus';
+  text-shadow: $text-shadow;
+}
+
+.logo {
+  font-family: 'Blue Lotus';
+  color: nth($font-colors, 1);
+  font-size: ($font-size + 25);
+}
+
+.logo__img {
+  display: inline-block;
+  width: 40px!important;
+  vertical-align: sub;
+}
+
+.card-toolbar {
+  background-color: rgba(220, 142, 50, .7);
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  right: -1px;
+  height: 0%;
+  width: 101%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0px 0px 10px 0px #000;
+  cursor: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-toolbar > * {
+  visibility: hidden;
+}
