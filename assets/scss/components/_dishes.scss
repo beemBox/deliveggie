@@ -149,7 +149,7 @@
 
         /* Llevamos abajo los detalles de la card para ver las imgs */
         .view-pics-cb:checked ~ .dishes-item__details {
-          height: 15%;
+          height: 16%;
           background: nth($site-colors, 6);
           padding-top: 10%;
           text-shadow: none;
@@ -225,7 +225,7 @@
               transition: all 0.5s ease-in-out;
               .dishes-item__img {
                 transition: all 0.5s ease-in-out;
-                transform: scale(1.4);
+                transform: scale(2);
                 bottom: 0;
                 top: 0;
                 left: 0;
@@ -315,7 +315,7 @@
           transition: opacity .8s ease-in-out;
           
           &:hover {
-            background-color: nth($site-colors, 5);
+            background-color: nth($site-colors, 4);
             color: nth($font-colors, 1);
             transition: all .1s ease-in-out;
           }

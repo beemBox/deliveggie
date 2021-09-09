@@ -345,7 +345,7 @@ section.carousel .carousel__container .banner3 {
   border-radius: 4px;
 }
 .dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details {
-  height: 15%;
+  height: 16%;
   background: #eee;
   padding-top: 10%;
   text-shadow: none;
@@ -425,7 +425,7 @@ section.carousel .carousel__container .banner3 {
 }
 .dishes .dishes__container .dishes-item:hover .carousel.slide .carousel-inner .carousel-item .dishes-item__img {
   transition: all 0.5s ease-in-out;
-  transform: scale(1.4);
+  transform: scale(2);
   bottom: 0;
   top: 0;
   left: 0;
@@ -512,7 +512,7 @@ section.carousel .carousel__container .banner3 {
   transition: opacity 0.8s ease-in-out;
 }
 .dishes .dishes__container .dishes-item .dishes-item__details .button:hover {
-  background-color: #dc8e32;
+  background-color: #705496;
   color: #fff;
   transition: all 0.1s ease-in-out;
 }
