@@ -232,6 +232,12 @@ section.carousel .carousel__container .banner3 {
 .dishes .carousel-control-prev {
   z-index: 9;
 }
+.dishes .carousel-control-next .carousel-control-prev-icon,
+.dishes .carousel-control-next .carousel-control-next-icon,
+.dishes .carousel-control-prev .carousel-control-prev-icon,
+.dishes .carousel-control-prev .carousel-control-next-icon {
+  filter: invert(56%) sepia(196%) saturate(2203%) hue-rotate(225deg) brightness(103%) contrast(253%) drop-shadow(1px 1px 2px #000) !important;
+}
 .dishes .carousel-control-next:active ~ .dishes-item__details,
 .dishes .carousel-control-prev:active ~ .dishes-item__details {
   color: #f00;
@@ -294,7 +300,7 @@ section.carousel .carousel__container .banner3 {
 .dishes .dishes__container .dishes-item .carousel.slide .carousel-inner .carousel-item .carousel-item__img {
   transition: all 0.5s ease-in-out;
 }
-.dishes .dishes__container .dishes-item #dish-1--imgs {
+.dishes .dishes__container .dishes-item .view-pics-cb {
   display: none;
 }
 .dishes .dishes__container .dishes-item .view-pics {
@@ -339,10 +345,27 @@ section.carousel .carousel__container .banner3 {
   border-radius: 4px;
 }
 .dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details {
-  height: 10%;
+  height: 15%;
   background: #eee;
   padding-top: 10%;
+  text-shadow: none;
   /* Ocultamos botón y estrellas de rating para ver las fotos */
+}
+.dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details:hover {
+  background: linear-gradient(to top, #eee 15%, rgba(255, 255, 255, 0) 150%);
+  width: 105%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+  text-shadow: 0.2px 0 0 #000, -0.2px 0 0 #000, 0 0.2px 0 #000, 0 -0.2px 0 #000, 0.2px 0.2px #000, -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 1px 1px 2px #000;
+}
+.dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details:hover .dishes__details--title {
+  color: #fff;
+  transition: color 0.7s ease-in-out;
+}
+.dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details:hover .button {
+  opacity: 1;
+  height: 50px;
 }
 .dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .dishes-item__details .dishes__details--title {
   color: #79a038;
@@ -367,7 +390,11 @@ section.carousel .carousel__container .banner3 {
   transition: all 0.5s ease-in-out;
 }
 .dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .carousel.slide .carousel-inner > .carousel-item:before {
-  background: none;
+  background: transparent;
+  transition: all 0.5s ease;
+}
+.dishes .dishes__container .dishes-item:hover .view-pics-cb:checked ~ .carousel.slide .carousel-inner > .carousel-item .dishes-item__img {
+  transform: scale(1.8);
 }
 .dishes .dishes__container .dishes-item:hover .carousel.slide {
   height: 100%;
@@ -398,7 +425,7 @@ section.carousel .carousel__container .banner3 {
 }
 .dishes .dishes__container .dishes-item:hover .carousel.slide .carousel-inner .carousel-item .dishes-item__img {
   transition: all 0.5s ease-in-out;
-  transform: scale(2.1);
+  transform: scale(1.4);
   bottom: 0;
   top: 0;
   left: 0;
@@ -411,11 +438,12 @@ section.carousel .carousel__container .banner3 {
   z-index: 9999;
 }
 .dishes .dishes__container .dishes-item:hover .dishes-item__details {
-  background: linear-gradient(to top, #eee 5%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to top, #eee 15%, rgba(255, 255, 255, 0) 150%);
   width: 105%;
   height: 100%;
   z-index: 3;
   transition: all 0.5s ease-in-out;
+  text-shadow: 0.2px 0 0 #000, -0.2px 0 0 #000, 0 0.2px 0 #000, 0 -0.2px 0 #000, 0.2px 0.2px #000, -0.2px -0.2px 0 #000, 0.2px -0.2px 0 #000, -0.2px 0.2px 0 #000, 1px 1px 2px #000;
 }
 .dishes .dishes__container .dishes-item:hover .dishes-item__details .dishes__details--title {
   color: #fff;

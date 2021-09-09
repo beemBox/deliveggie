@@ -19,6 +19,11 @@
   .carousel-control-prev {
       z-index: 9;
 
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(56%) sepia(196%) saturate(2203%) hue-rotate(225deg) brightness(103%) contrast(253%) drop-shadow(1px 1px 2px #000) !important;
+      }
+
       &:active ~ .dishes-item__details {
         color: #f00;
       }
@@ -87,7 +92,7 @@
         }
       }
 
-      #dish-1--imgs {
+      .view-pics-cb {
         display: none;
       }
 
@@ -130,19 +135,28 @@
           }
         }
 
-        .view-pics-cb:checked ~ .card-toolbar > .view-pics {
-          opacity: 1;
-          color: nth($font-colors, 1);
-          border: 2px solid nth($font-colors, 1);
-          padding: 0 3px;
-          border-radius: 4px;
+        .view-pics-cb:checked ~ .card-toolbar {
+        
+          & > .view-pics {
+            opacity: 1;
+            color: nth($font-colors, 1);
+            border: 2px solid nth($font-colors, 1);
+            padding: 0 3px;
+            border-radius: 4px;
+          }
         }
+
 
         /* Llevamos abajo los detalles de la card para ver las imgs */
         .view-pics-cb:checked ~ .dishes-item__details {
-          height: 10%;
+          height: 15%;
           background: nth($site-colors, 6);
           padding-top: 10%;
+          text-shadow: none;
+
+          &:hover {
+            @include active-dishes-item;
+          }
 
           .dishes__details--title {
             color: nth($font-colors, 3);
@@ -171,8 +185,15 @@
         }
 
         .view-pics-cb:checked ~ .carousel.slide {
-          .carousel-inner > .carousel-item:before {
-            background: none;
+          .carousel-inner > .carousel-item {
+            &:before {
+              background: transparent;
+              transition: all .5s ease;
+            }
+
+            .dishes-item__img {
+              transform: scale(1.8);
+            }
           }
         }
 
@@ -204,7 +225,7 @@
               transition: all 0.5s ease-in-out;
               .dishes-item__img {
                 transition: all 0.5s ease-in-out;
-                transform: scale(2.1);
+                transform: scale(1.4);
                 bottom: 0;
                 top: 0;
                 left: 0;
